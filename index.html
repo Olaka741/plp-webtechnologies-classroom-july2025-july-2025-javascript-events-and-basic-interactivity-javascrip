@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Project</h1>
+        <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="counter-game" class="section">
+            <h2>Counter Game</h2>
+            <div class="counter-container">
+                <p>Count: <span id="count">0</span></p>
+                <button id="increment" class="btn">+</button>
+                <button id="decrement" class="btn">-</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+        </section>
+
+        <section id="faq-section" class="section">
+            <h2>FAQ Section</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What is JavaScript? <span class="toggle-icon">+</span></div>
+                    <div class="faq-answer">JavaScript is a programming language that enables interactive web pages.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is CSS? <span class="toggle-icon">+</span></div>
+                    <div class="faq-answer">CSS (Cascading Style Sheets) is used to style and layout web pages.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is HTML? <span class="toggle-icon">+</span></div>
+                    <div class="faq-answer">HTML (HyperText Markup Language) is the standard markup language for web pages.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dropdown-section" class="section">
+            <h2>Dropdown Menu</h2>
+            <div class="dropdown">
+                <button class="dropdown-btn">Select an option</button>
+                <div class="dropdown-content">
+                    <a href="#" data-value="option1">Option 1</a>
+                    <a href="#" data-value="option2">Option 2</a>
+                    <a href="#" data-value="option3">Option 3</a>
+                </div>
+            </div>
+            <p id="selected-option">Selected: None</p>
+        </section>
+
+        <section id="tabbed-interface" class="section">
+            <h2>Tabbed Interface</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content">
+                <div id="tab1" class="tab-pane active">
+                    <h3>Content for Tab 1</h3>
+                    <p>This is the content for the first tab.</p>
+                </div>
+                <div id="tab2" class="tab-pane">
+                    <h3>Content for Tab 2</h3>
+                    <p>This is the content for the second tab.</p>
+                </div>
+                <div id="tab3" class="tab-pane">
+                    <h3>Content for Tab 3</h3>
+                    <p>This is the content for the third tab.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-section" class="section">
+            <h2>Form Validation</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+            <div id="form-success" class="success-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive Web Project &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
